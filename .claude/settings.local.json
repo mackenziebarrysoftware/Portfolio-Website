@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init -y)",
+      "Bash(npm install:*)",
+      "Bash(npx claude-code-templates@latest:*)",
+      "Bash(git clone:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npx get-shit-done-cc@latest --claude --local --yes)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx kill-port:*)"
+    ]
+  }
+}
