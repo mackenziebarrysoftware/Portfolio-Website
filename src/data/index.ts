@@ -4,8 +4,8 @@
  */
 
 export const siteConfig = {
-  name: 'Portfolio',
-  title: 'Software Engineering Portfolio',
+  name: 'Mackenzie Barry',
+  title: 'Mackenzie Barry — Software Engineering Portfolio',
   description: 'Showcasing my skills, experience and qualifications in Software Engineering',
   url: 'https://yourportfolio.com',
 }
@@ -20,7 +20,7 @@ export const navigation = {
   social: [
     { name: 'GitHub', href: 'https://github.com/yourusername', icon: 'Github' },
     { name: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', icon: 'Linkedin' },
-    { name: 'Email', href: 'mailto:your.email@example.com', icon: 'Mail' },
+    { name: 'Email', href: 'mailto:Mackenzie.barry@icloud.com', icon: 'Mail' },
   ],
 }
 
@@ -69,7 +69,7 @@ export const projects = [
 
 export const about = {
   title: 'About Me',
-  bio: 'I am a passionate Software Engineer with experience in building web applications and solving complex problems. I love learning new technologies and applying them to create meaningful solutions.',
+  bio: 'I am a Software Engineering student at Lancaster University, pursuing an integrated masters degree (2024–2028). Originally from Belfast, I am passionate about building web applications and solving complex problems through code.',
   skills: {
     frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
     backend: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB'],
@@ -77,10 +77,10 @@ export const about = {
   },
   experience: [
     {
-      role: 'Software Engineer',
-      company: 'Company Name',
-      period: '2023 - Present',
-      description: 'Working on exciting projects and technologies.',
+      role: 'Software Engineering (MEng)',
+      company: 'Lancaster University',
+      period: '2024 - 2028',
+      description: 'Integrated masters degree in Software Engineering.',
     },
   ],
 }
@@ -88,10 +88,11 @@ export const about = {
 export const contact = {
   title: 'Get In Touch',
   description: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
-  email: 'your.email@example.com',
+  email: 'Mackenzie.barry@icloud.com',
+  phone: '07986633394',
 }
 
 export const footer = {
-  copyright: `© ${new Date().getFullYear()} Portfolio. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Mackenzie Barry. All rights reserved.`,
   builtWith: 'Built with Next.js, TypeScript, and Tailwind CSS',
 }

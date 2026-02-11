@@ -52,27 +52,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right side - Minimal decoration */}
+          {/* Right side - Photo */}
           <div className="lg:col-span-5 reveal reveal-6">
-            <div className="relative aspect-square max-w-md mx-auto">
-              {/* Minimalist geometric shape */}
+            <div className="relative aspect-[3/4] max-w-md mx-auto">
               <div className="absolute inset-0 border border-charcoal/10" />
-              <div className="absolute inset-8 border border-accent/30" />
-              <div className="absolute inset-16 bg-accent/5" />
-
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-6">
-                  <div className="space-y-2">
-                    <p className="text-sm uppercase tracking-[0.3em] text-accent">Based in</p>
-                    <p className="text-2xl font-serif">Your City</p>
-                  </div>
-                  <div className="h-px w-12 bg-charcoal/20 mx-auto" />
-                  <div className="space-y-2">
-                    <p className="text-sm uppercase tracking-[0.3em] text-accent">Available</p>
-                    <p className="text-2xl font-serif">Worldwide</p>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="/mackenzie-barry.jpeg"
+                alt="Mackenzie Barry"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 border border-accent/30 m-4 pointer-events-none" />
             </div>
           </div>
         </div>
