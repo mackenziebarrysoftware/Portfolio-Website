@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { projects } from '@/data'
+import type { Project } from '@/types/project'
 
 export default function Projects() {
   return (
