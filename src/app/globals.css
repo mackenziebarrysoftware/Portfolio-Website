@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Light mode - Professional tech aesthetic */
   --color-background: oklch(0.98 0.002 247.86); /* Near white with cool tint */
@@ -40,12 +42,12 @@
 
 @layer base {
   * {
-    @apply border-charcoal/10;
+    @apply border-border;
   }
 
   body {
-    background-color: var(--color-cream);
-    color: var(--color-charcoal);
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: var(--font-sans), sans-serif;
@@ -53,7 +55,14 @@
     line-height: 1.6;
   }
 
+  /* Increase font weight in dark mode for better readability */
+  .dark body {
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
   h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground;
     font-family: var(--font-serif), serif;
     font-weight: 300;
     letter-spacing: -0.02em;
@@ -66,16 +75,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-cream);
+  @apply bg-background;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-accent);
+  @apply bg-primary;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-charcoal);
+  @apply bg-primary/80;
 }
 
 html {
@@ -83,8 +92,7 @@ html {
 }
 
 ::selection {
-  background-color: var(--color-accent-light);
-  color: white;
+  @apply bg-accent text-accent-foreground;
 }
 
 /* Reveal animations */
