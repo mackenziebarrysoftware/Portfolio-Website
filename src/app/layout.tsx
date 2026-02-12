@@ -4,6 +4,7 @@ import './globals.css'
 import { siteConfig } from '@/data'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import { ThemeProvider } from '@/components/theme/ThemeProvider'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -46,11 +47,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${workSans.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${cormorant.variable} ${workSans.variable}`}>
       <body className="min-h-screen">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange={false}
+        >
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )
