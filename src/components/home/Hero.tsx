@@ -45,7 +45,7 @@ export default function Hero() {
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-3 px-8 py-4 border border-border hover:border-primary hover:text-primary transition-all duration-300"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"
               >
                 <span className="text-sm tracking-wide">Get in Touch</span>
               </a>
