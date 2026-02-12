@@ -10,7 +10,7 @@ import type { Project } from '@/types/project'
 export const projects = [
   {
     id: 1,
-    title: 'Project Title 1',
+    title: 'Project 1',
     description: 'A brief description of this project showcasing what it does and the technologies used.',
     image: '/projects/project1.jpg',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -36,6 +36,16 @@ export const projects = [
     tags: ['Python', 'FastAPI', 'Docker'],
     github: 'https://github.com/yourusername/project3',
     demo: 'https://project3-demo.com',
+    featured: false,
+  },
+  {
+    id: 4,
+    title: 'New Project',
+    description: 'Testing that new projects can be added via data file',
+    image: '/projects/project4.jpg',
+    tags: ['Test'],
+    github: 'https://github.com/test/test',
+    demo: 'https://test.com',
     featured: false,
   },
 ] as const satisfies readonly Project[]
