@@ -17,27 +17,27 @@ export default function Hero() {
           {/* Left side - Text */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
-              <p className="text-sm uppercase tracking-[0.3em] text-accent reveal reveal-1">
+              <p className="text-sm uppercase tracking-[0.3em] text-primary reveal reveal-1">
                 Portfolio 2024
               </p>
 
-              <h1 className="text-6xl md:text-7xl lg:text-8xl leading-[0.95] reveal reveal-2">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-foreground reveal reveal-2">
                 Creative
                 <br />
                 Developer
               </h1>
 
-              <div className="h-px bg-charcoal/20 w-24 reveal reveal-3 line-reveal" />
+              <div className="h-px bg-border w-24 reveal reveal-3 line-reveal" />
             </div>
 
-            <p className="text-xl md:text-2xl leading-relaxed max-w-xl text-charcoal/70 reveal reveal-4">
+            <p className="text-xl md:text-2xl leading-relaxed max-w-xl text-muted-foreground reveal reveal-4">
               Crafting refined digital experiences through thoughtful design and elegant code
             </p>
 
             <div className="flex flex-wrap gap-4 reveal reveal-5">
               <a
                 href="#work"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-charcoal text-cream hover:bg-accent transition-colors duration-300"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"
               >
                 <span className="text-sm tracking-wide">View Work</span>
                 <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
@@ -45,7 +45,7 @@ export default function Hero() {
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-3 px-8 py-4 border border-charcoal/20 hover:border-accent hover:text-accent transition-all duration-300"
+                className="inline-flex items-center gap-3 px-8 py-4 border border-border hover:border-primary hover:text-primary transition-all duration-300"
               >
                 <span className="text-sm tracking-wide">Get in Touch</span>
               </a>
@@ -55,23 +55,14 @@ export default function Hero() {
           {/* Right side - Photo */}
           <div className="lg:col-span-5 reveal reveal-6">
             <div className="relative aspect-[3/4] max-w-md mx-auto">
-              <div className="absolute inset-0 border border-charcoal/10" />
+              <div className="absolute inset-0 border border-border" />
               <img
                 src="/mackenzie-barry.jpeg"
                 alt="Mackenzie Barry"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 border border-accent/30 m-4 pointer-events-none" />
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 reveal reveal-6">
-        <div className="flex flex-col items-center gap-3 text-charcoal/40">
-          <span className="text-xs uppercase tracking-[0.3em]">Scroll</span>
-          <div className="w-px h-16 bg-charcoal/20" />
         </div>
       </div>
     </section>
