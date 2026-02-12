@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 Phase: 1 of 6 (Dark Theme System)
-Plan: 2 of 4 (in progress)
+Plan: 2 of 4 (ready for plan 3)
 Status: In progress
-Last activity: 2026-02-12 — Completed 01-02-PLAN.md (Dark/Techy Color Palette)
+Last activity: 2026-02-12 — Completed 01-01-PLAN.md (Theme Infrastructure)
 
 Progress: [██░░░░░░░░] 16% (2 of 12 total plans)
 
@@ -45,6 +45,9 @@ Recent decisions affecting current work:
 - Dark/techy aesthetic over editorial — needs to signal technical skill for freelancing clients
 - Data file for projects over CMS — simpler, no extra infrastructure
 - Static export stays — already configured, fast hosting, no server costs
+- **01-01:** next-themes for automatic FOUC prevention and localStorage management
+- **01-01:** Dark theme as default (defaultTheme='dark') per DSGN-01
+- **01-01:** Client component wrapper pattern for isolating 'use client' boundaries
 - **01-02:** oklch color space for perceptually uniform colors across themes
 - **01-02:** Blue/cyan palette (#263.71 / #194.77 hues) for tech aesthetic
 - **01-02:** Soft black (oklch 0.11) not pure black to prevent eye strain
@@ -65,9 +68,9 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-12 (plan execution)
-Stopped at: Completed 01-02-PLAN.md (Dark/Techy Color Palette)
+Stopped at: Completed 01-01-PLAN.md (Theme Infrastructure) - Plans 01-01 and 01-02 both complete
 Resume file: None
 
 ---
 *State initialized: 2026-02-12*
-*Last updated: 2026-02-12 after completing 01-02-PLAN.md*
+*Last updated: 2026-02-12 after completing 01-01-PLAN.md*
