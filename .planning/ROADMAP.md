@@ -31,10 +31,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Theme system prevents flash of unstyled content (FOUC) on page load
   4. Interactive elements display polished hover states and visual feedback
   5. Typography uses professional fonts that maintain readability in dark mode
-**Plans**: TBD
+**Plans**: 4 plans in 3 waves
 
 Plans:
-- [ ] TBD
+- [ ] 01-01-PLAN.md - Theme infrastructure with next-themes and dark mode config (Wave 1)
+- [ ] 01-02-PLAN.md - Dark color system with WCAG AA contrast verification (Wave 1)
+- [ ] 01-03-PLAN.md - Theme toggle component and semantic token migration (Wave 2)
+- [ ] 01-04-PLAN.md - Human verification checkpoint (Wave 3)
 
 ### Phase 2: Project Data Infrastructure
 **Goal**: Project content is managed through type-safe data files with validation
@@ -118,7 +121,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Dark Theme System | 0/TBD | Not started | - |
+| 1. Dark Theme System | 0/4 | Ready to execute | - |
 | 2. Project Data Infrastructure | 0/TBD | Not started | - |
 | 3. Content & Navigation | 0/TBD | Not started | - |
 | 4. Project Showcase UI | 0/TBD | Not started | - |
