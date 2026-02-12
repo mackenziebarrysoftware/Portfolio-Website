@@ -23,7 +23,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? 'bg-cream/95 backdrop-blur-sm border-b border-charcoal/10'
+            ? 'bg-background/95 backdrop-blur-sm border-b border-border'
             : 'bg-transparent'
         }`}
       >
@@ -32,7 +32,7 @@ export default function Navbar() {
             {/* Logo */}
             <a
               href="/"
-              className="text-xl font-serif hover:text-accent transition-colors"
+              className="text-xl font-serif text-foreground hover:text-accent transition-colors"
             >
               Portfolio
             </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-sm uppercase tracking-wide text-charcoal/70 hover:text-charcoal transition-colors"
+                  className="text-sm uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {item.name}
                 </a>
@@ -56,7 +56,7 @@ export default function Navbar() {
               <ThemeToggle />
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="w-10 h-10 flex items-center justify-center text-charcoal"
+                className="w-10 h-10 flex items-center justify-center text-foreground hover:text-accent transition-colors"
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -73,7 +73,7 @@ export default function Navbar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden overflow-hidden bg-cream border-t border-charcoal/10"
+              className="md:hidden overflow-hidden bg-card border-t border-border"
             >
               <div className="px-6 py-8 space-y-4">
                 {navigation.main.map((item) => (
@@ -81,7 +81,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block text-lg font-serif hover:text-accent transition-colors"
+                    className="block text-lg font-serif text-foreground hover:text-accent transition-colors"
                   >
                     {item.name}
                   </a>
@@ -100,7 +100,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsMobileMenuOpen(false)}
-            className="fixed inset-0 bg-charcoal/20 backdrop-blur-sm z-40 md:hidden"
+            className="fixed inset-0 bg-foreground/20 backdrop-blur-sm z-40 md:hidden"
           />
         )}
       </AnimatePresence>
