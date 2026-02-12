@@ -19,25 +19,25 @@
   --color-accent: oklch(0.60 0.14 194.77); /* Cyan accent - tech aesthetic */
   --color-accent-foreground: oklch(0.13 0.006 285.82);
   --color-ring: oklch(0.55 0.22 263.71); /* Focus ring matches primary */
+}
 
-  /* Dark mode - Contrast tested WCAG AA, default theme per DSGN-01 */
-  .dark {
-    --color-background: oklch(0.11 0.006 285.82); /* Soft black, not #000 */
-    --color-foreground: oklch(0.89 0.003 285.82); /* Soft white, not #FFF */
-    --color-muted: oklch(0.17 0.006 285.82);
-    --color-muted-foreground: oklch(0.60 0.006 285.82);
-    --color-card: oklch(0.14 0.004 285.82); /* Slightly lighter than bg */
-    --color-card-foreground: oklch(0.89 0.003 285.82);
-    --color-border: oklch(0.21 0.006 285.82);
-    --color-input: oklch(0.21 0.006 285.82);
-    --color-primary: oklch(0.65 0.20 263.71); /* Lighter blue for dark bg */
-    --color-primary-foreground: oklch(0.11 0.006 285.82);
-    --color-secondary: oklch(0.60 0.08 285.82); /* Desaturated for dark */
-    --color-secondary-foreground: oklch(0.11 0.006 285.82);
-    --color-accent: oklch(0.70 0.12 194.77); /* Desaturated cyan */
-    --color-accent-foreground: oklch(0.11 0.006 285.82);
-    --color-ring: oklch(0.65 0.20 263.71);
-  }
+/* Dark mode - Contrast tested WCAG AA, default theme per DSGN-01 */
+.dark {
+  --color-background: oklch(0.11 0.006 285.82); /* Soft black, not #000 */
+  --color-foreground: oklch(0.89 0.003 285.82); /* Soft white, not #FFF */
+  --color-muted: oklch(0.17 0.006 285.82);
+  --color-muted-foreground: oklch(0.60 0.006 285.82);
+  --color-card: oklch(0.14 0.004 285.82); /* Slightly lighter than bg */
+  --color-card-foreground: oklch(0.89 0.003 285.82);
+  --color-border: oklch(0.21 0.006 285.82);
+  --color-input: oklch(0.21 0.006 285.82);
+  --color-primary: oklch(0.65 0.20 263.71); /* Lighter blue for dark bg */
+  --color-primary-foreground: oklch(0.11 0.006 285.82);
+  --color-secondary: oklch(0.60 0.08 285.82); /* Desaturated for dark */
+  --color-secondary-foreground: oklch(0.11 0.006 285.82);
+  --color-accent: oklch(0.70 0.12 194.77); /* Desaturated cyan */
+  --color-accent-foreground: oklch(0.11 0.006 285.82);
+  --color-ring: oklch(0.65 0.20 263.71);
 }
 
 @layer base {
