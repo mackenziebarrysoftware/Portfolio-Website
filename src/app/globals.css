@@ -2,6 +2,11 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+}
+
 @theme {
   /* Light mode - Professional tech aesthetic */
   --color-background: oklch(0.98 0.002 247.86); /* Near white with cool tint */

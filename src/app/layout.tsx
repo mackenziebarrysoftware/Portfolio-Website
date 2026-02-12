@@ -1,24 +1,9 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Work_Sans } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/data'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  variable: '--font-serif',
-  display: 'swap',
-  weight: ['300', '400', '500', '600', '700'],
-})
-
-const workSans = Work_Sans({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
-  weight: ['300', '400', '500', '600'],
-})
 
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -47,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${cormorant.variable} ${workSans.variable}`}>
+    <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen">
         <ThemeProvider
           attribute="class"
