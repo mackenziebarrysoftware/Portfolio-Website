@@ -46,6 +46,10 @@
 }
 
 @layer base {
+  section[id] {
+    scroll-margin-top: 6rem; /* navbar h-20 (5rem) + 1rem breathing room */
+  }
+
   * {
     @apply border-border;
   }

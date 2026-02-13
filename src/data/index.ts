@@ -52,7 +52,16 @@ export const projects = projectsArraySchema.parse(rawProjects)
 
 export const about = {
   title: 'About Me',
-  bio: 'I am a Software Engineering student at Lancaster University, pursuing an integrated masters degree (2024–2028). Originally from Belfast, I am passionate about building web applications and solving complex problems through code.',
+  bio: 'I am a Software Engineering student at Lancaster University, pursuing an integrated masters degree in Software Engineering (MEng, 2024–2028). Based in Belfast, I build modern web applications with React, Next.js, and TypeScript — and I am available for freelance projects that need polished, performant front-ends.',
+  availability: {
+    status: 'available' as const,
+    message: 'Available for freelance projects',
+  },
+  location: {
+    city: 'Belfast',
+    country: 'Northern Ireland',
+    timezone: 'GMT/BST (UTC+0/+1)',
+  },
   skills: {
     frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
     backend: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB'],
