@@ -64,10 +64,11 @@ Plans:
   4. User can navigate between all sections smoothly using navbar
   5. Contact form submits to Supabase successfully (already working, verify still functional)
   6. Direct email link provides alternative contact method
-**Plans**: TBD
+**Plans**: 2 plans in 2 waves
 
 Plans:
-- [ ] TBD
+- [ ] 03-01-PLAN.md - About section enrichment with bio, availability, location, and scroll offset (Wave 1)
+- [ ] 03-02-PLAN.md - Social links in Navbar, real URLs, and full-site verification (Wave 2)
 
 ### Phase 4: Project Showcase UI
 **Goal**: Projects display in visually appealing grid with thumbnails, descriptions, and tech badges
@@ -117,17 +118,17 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Dark Theme System | 4/4 | ✓ Complete | 2026-02-12 |
-| 2. Project Data Infrastructure | 1/1 | ✓ Complete | 2026-02-12 |
-| 3. Content & Navigation | 0/TBD | Not started | - |
+| 1. Dark Theme System | 4/4 | Complete | 2026-02-12 |
+| 2. Project Data Infrastructure | 1/1 | Complete | 2026-02-12 |
+| 3. Content & Navigation | 0/2 | In progress | - |
 | 4. Project Showcase UI | 0/TBD | Not started | - |
 | 5. Performance & SEO | 0/TBD | Not started | - |
 | 6. Animations & Polish | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-12*
-*Last updated: 2026-02-12 after Phase 2 completion*
+*Last updated: 2026-02-13 after Phase 3 planning*
