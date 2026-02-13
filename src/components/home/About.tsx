@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { MapPin, Clock } from 'lucide-react'
 import { about } from '@/data'
 
 export default function About() {
@@ -34,12 +35,43 @@ export default function About() {
               <div className="h-px bg-border w-16" />
             </motion.div>
 
+            {/* Availability, Location, Timezone */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <div className="flex flex-wrap gap-x-6 gap-y-3">
+                {/* Availability */}
+                <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                  </span>
+                  <span>{about.availability.message}</span>
+                </div>
+
+                {/* Location */}
+                <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                  <MapPin className="w-3.5 h-3.5 text-primary" />
+                  <span>{about.location.city}, {about.location.country}</span>
+                </div>
+
+                {/* Timezone */}
+                <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                  <Clock className="w-3.5 h-3.5 text-primary" />
+                  <span>{about.location.timezone}</span>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Experience */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="space-y-8"
             >
               <h3 className="text-sm uppercase tracking-[0.3em] text-primary">Experience</h3>
@@ -65,7 +97,7 @@ export default function About() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               className="space-y-8"
             >
               <h3 className="text-sm uppercase tracking-[0.3em] text-primary">Capabilities</h3>
