@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
+import Image from 'next/image'
 import { projects } from '@/data'
 import type { Project } from '@/types/project'
 
@@ -31,6 +32,13 @@ export default function Projects() {
                 {/* Project visual */}
                 <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:col-start-6' : ''}`}>
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted border border-border hover-lift">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 58vw"
+                    />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <span className="text-9xl font-serif text-foreground/5">
                         {String(index + 1).padStart(2, '0')}

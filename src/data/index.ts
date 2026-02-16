@@ -21,8 +21,8 @@ export const navigation = {
     { name: 'Contact', href: '#contact' },
   ],
   social: [
-    { name: 'GitHub', href: 'https://github.com/yourusername', icon: 'Github' },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', icon: 'Linkedin' },
+    { name: 'GitHub', href: 'https://github.com/mackenziebarrysoftware', icon: 'Github' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mackenzie-barry-077b46335/', icon: 'Linkedin' },
     { name: 'Email', href: 'mailto:Mackenzie.barry@icloud.com', icon: 'Mail' },
   ],
 }

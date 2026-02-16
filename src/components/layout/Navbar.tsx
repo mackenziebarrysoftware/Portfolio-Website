@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Github, Linkedin } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { navigation } from '@/data'
 import { ThemeToggle } from '@/components/theme/ThemeToggle'
@@ -48,6 +48,24 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))}
+              <div className="border-l border-border h-4" />
+              {navigation.social
+                .filter((s) => s.icon === 'Github' || s.icon === 'Linkedin')
+                .map((social) => {
+                  const Icon = social.icon === 'Github' ? Github : Linkedin
+                  return (
+                    <a
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={social.name}
+                    >
+                      <Icon className="w-4 h-4" />
+                    </a>
+                  )
+                })}
               <ThemeToggle />
             </div>
 
@@ -86,6 +104,26 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
+                <div className="pt-4 border-t border-border flex gap-4">
+                  {navigation.social
+                    .filter((s) => s.icon === 'Github' || s.icon === 'Linkedin')
+                    .map((social) => {
+                      const Icon = social.icon === 'Github' ? Github : Linkedin
+                      return (
+                        <a
+                          key={social.name}
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="text-muted-foreground hover:text-foreground transition-colors"
+                          aria-label={social.name}
+                        >
+                          <Icon className="w-5 h-5" />
+                        </a>
+                      )
+                    })}
+                </div>
               </div>
             </motion.div>
           )}

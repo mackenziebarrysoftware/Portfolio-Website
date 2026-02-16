@@ -10,12 +10,12 @@ import type { Project } from '@/types/project'
 export const projects = [
   {
     id: 1,
-    title: 'Project 1',
-    description: 'A brief description of this project showcasing what it does and the technologies used.',
-    image: '/projects/project1.jpg',
+    title: 'Freelance Landing Page',
+    description: 'A landing page to show my ability in freelancing landing pages for clients.',
+    image: '/images/freelanceproject.png',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/yourusername/project1',
-    demo: 'https://project1-demo.com',
+    github: 'https://github.com/mackenziebarrysoftware/Landing-Page-Information',
+    demo: 'https://mb-landingpage.netlify.app',
     featured: true,
   },
   {
